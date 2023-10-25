@@ -1,0 +1,94 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* รูปแบบทั่วไปของหน้าเว็บ */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #ff0037;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* รายการสินค้าและบริการ */
+.product, .product-details, .product-promo {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.product img, .product-details img, .product-promo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product h3, .product-details h3, .product-promo h4 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+/* รายการโปรโมชัน */
+.promo-category {
+    margin: 20px 0;
+}
+
+.promo-category h3 {
+    font-size: 18px;
+}
+
+.product-promo {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+}
+
+.product-promo p {
+    margin: 10px 0;
+}
+
+/* ลิงค์ไปยัง Facebook */
+a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.product-list {
+    display: flex;
+    flex-wrap: nowrap; /* ป้องกันการขึ้นบรรทัดใหม่ */
+    overflow: auto; /* เพิ่มแถบเลื่อนให้มาถ้าจำเป็น */
+}
+ 
+/* รายการสินค้า */
+.product-item {
+    flex: 0 0 290px; /* กำหนดขนาดความกว้างของแต่ละรายการ */
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}

@@ -1,0 +1,44 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+.product-details {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+.product-details img {
+    max-width: 100%;
+}
+
+.product-details h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.product-details p {
+    margin: 5px 0;
+}
+
+/* CSS Flexbox เพื่อจัดกลุ่มองค์ประกอบสินค้ารายละเอียดในแนวนอน */
+.product-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* CSS Media Query เพื่อปรับขนาดแสดงผลในอุปกรณ์แบบเล็ก */
+@media (max-width: 768px) {
+    .product-details {
+        flex-direction: column;
+        text-align: left;
+    }
+}
